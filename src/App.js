@@ -4,18 +4,21 @@ import { Container, Button } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-  const booboo = ["simbo", "noel", "egg", "waterbottle", "solojazz", "bruh"]
+  const booboo = [
+    "simbo", "noel", "egg",
+    "waterbottle", "solojazz", "bruh"
+  ];
   return (
     <Container >
 
-        {booboo.map((bruh)=>{
-          return (
-            <Herb
+      {booboo.map((bruh) => {
+        return (
+          <Herb
             name={bruh}
             key={bruh}
-            />
-          )
-        })}
+          />
+        );
+      })}
       <Button
         target="_blank"
         href="https://www.youtube.com/watch?v=5_0Yonah0gY"
